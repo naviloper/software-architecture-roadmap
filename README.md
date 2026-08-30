@@ -32,7 +32,7 @@ The goal is not to memorize technologies or patterns, but to understand **proble
 
 | Document | Description |
 | -------- | ----------- |
-| [ROADMAP.md](ROADMAP.md) | Full learning path with topics and progress tracking |
+| [ROADMAP.md](ROADMAP.md) | Full learning path with topics and recommended priority |
 | [RESOURCES.md](RESOURCES.md) | Books, courses, and tools |
 | [TEMPLATE.md](TEMPLATE.md) | Standard format for topic files |
 
@@ -40,11 +40,10 @@ Topic content lives in numbered folders (`01-dsa/` through `09-case-studies/`). 
 
 ## How to use
 
-1. **Pick a topic** from [ROADMAP.md](ROADMAP.md).
+1. **Pick a topic** from [ROADMAP.md](ROADMAP.md) — start with **Core**, then Supporting and Optional as they become relevant.
 2. **Create a file** in the appropriate folder using [TEMPLATE.md](TEMPLATE.md).
 3. **Write your understanding** — explain in your own words; link to original resources.
-4. **Update status** in ROADMAP.md as you progress.
-5. **Apply what you learn** — design systems, document decisions, add case studies.
+4. **Apply what you learn** — design systems, document decisions, add case studies.
 
 Follow the mental model for every topic:
 
@@ -54,18 +53,15 @@ Problem → Concept → Solution → Trade-off
 
 Balance learning with practice — gather information from resources, then apply it by designing systems and documenting decisions.
 
-## Status legend
+## Topic priority
 
-| Symbol | Level | Meaning |
-| ------ | ----- | ------- |
-| 🔴 | Not started | Never studied this |
-| 🟠 | Familiar | Know what it is |
-| 🟡 | Understanding | Can explain it |
-| 🟢 | Can apply | Can use it in a real system |
-| 🔵 | Deep understanding | Understand trade-offs, alternatives, and failure modes |
-| ⭐ | Mastered | Can teach it and make architectural decisions involving it |
+| Priority | Meaning |
+| -------- | ------- |
+| Core | Prioritize this — needed to design and reason about real systems |
+| Supporting | Learn when it unblocks later topics or deepens a Core idea |
+| Optional | Depth only if your work needs it; skip without breaking the path |
 
-For architecture work, **level 3–4 is sufficient for many topics**. You do not need mastery of every cloud service or pattern.
+You do not need equal depth on every topic. For experienced developers, prioritize **Software Architecture**, **Distributed Systems**, and **System Design**.
 
 ## Optional: track progress with GitHub
 

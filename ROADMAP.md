@@ -1,8 +1,8 @@
 # Roadmap
 
-Full learning path for Software Architecture and System Design. All topics start as **🔴 Not started** — update status as you progress.
+Full learning path for Software Architecture and System Design. Topics are marked **Core**, **Supporting**, or **Optional** — see [README.md](README.md) for the legend.
 
-See [README.md](README.md) for the status legend.
+Start with Core. Pick up Supporting and Optional as they become relevant to the systems you are designing.
 
 ## Overview
 
@@ -34,16 +34,16 @@ You do not need equal depth at every level. For experienced developers, prioriti
 
 ## 0. Programming Foundations
 
-**Goal:** Gap-check only if you already have professional experience.
+**Goal:** Gap-check only if you already have professional experience. Core here means you should already be comfortable — not that you should start the roadmap with a first-year syllabus.
 
-| Topic | Status |
-| ----- | ------ |
-| OOP, abstraction, encapsulation, interfaces | 🔴 |
-| Generics, exceptions, concurrency basics | 🔴 |
-| HTTP, TCP/IP basics, REST, JSON | 🔴 |
-| Authentication | 🔴 |
-| Databases, SQL | 🔴 |
-| Git, testing | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| OOP, abstraction, encapsulation, interfaces | Core |
+| HTTP, TCP/IP basics, REST, JSON | Core |
+| Authentication | Core |
+| Databases, SQL | Core |
+| Generics, exceptions, concurrency basics | Supporting |
+| Git, testing | Supporting |
 
 ---
 
@@ -51,25 +51,25 @@ You do not need equal depth at every level. For experienced developers, prioriti
 
 **Goal:** Develop algorithmic thinking and complexity awareness — not competitive-programming mastery.
 
-| Topic | Status |
-| ----- | ------ |
-| Arrays, strings | 🔴 |
-| Linked lists | 🔴 |
-| Stacks, queues | 🔴 |
-| Hash maps, hash sets | 🔴 |
-| Trees, binary search trees | 🔴 |
-| Heaps / priority queues | 🔴 |
-| Graphs | 🔴 |
-| Linear search, binary search | 🔴 |
-| Sorting | 🔴 |
-| BFS, DFS | 🔴 |
-| Dijkstra, topological sorting | 🔴 |
-| Recursion, divide & conquer | 🔴 |
-| Greedy algorithms, dynamic programming | 🔴 |
-| Two pointers, sliding window | 🔴 |
-| Big-O, time/space/amortized complexity | 🔴 |
-| B-trees, inverted indexes | 🔴 |
-| Consistent hashing, bloom filters | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Hash maps, hash sets | Core |
+| Stacks, queues | Core |
+| Graphs | Core |
+| Big-O, time/space/amortized complexity | Core |
+| B-trees, inverted indexes | Core |
+| Consistent hashing, bloom filters | Core |
+| Arrays, strings | Supporting |
+| Trees, binary search trees | Supporting |
+| Heaps / priority queues | Supporting |
+| Linear search, binary search | Supporting |
+| BFS, DFS | Supporting |
+| Dijkstra, topological sorting | Supporting |
+| Linked lists | Optional |
+| Sorting | Optional |
+| Recursion, divide & conquer | Optional |
+| Greedy algorithms, dynamic programming | Optional |
+| Two pointers, sliding window | Optional |
 
 **Target:** Look at an implementation and say: _"This is O(n²); we can probably solve it in O(n log n)."_
 
@@ -81,20 +81,20 @@ Folder: [`01-dsa/`](01-dsa/)
 
 **Goal:** Move from _"I can write code"_ to _"I can design code that remains maintainable as requirements change."_
 
-| Topic | Status |
-| ----- | ------ |
-| Composition vs inheritance, coupling, cohesion | 🔴 |
-| Dependency inversion, immutability, encapsulation | 🔴 |
-| SOLID principles | 🔴 |
-| Design patterns (Strategy, Factory, Adapter, Decorator, Facade, Observer, Command, State, Builder, Proxy) | 🔴 |
-| Layered architecture | 🔴 |
-| Hexagonal architecture | 🔴 |
-| Clean Architecture | 🔴 |
-| Onion Architecture, ports & adapters | 🔴 |
-| Entities, value objects, aggregates | 🔴 |
-| Repositories, domain services, application services | 🔴 |
-| Domain events | 🔴 |
-| Domain-Driven Design | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Composition vs inheritance, coupling, cohesion | Core |
+| Dependency inversion, immutability, encapsulation | Core |
+| SOLID principles | Core |
+| Layered architecture | Core |
+| Hexagonal architecture | Core |
+| Entities, value objects, aggregates | Core |
+| Domain-Driven Design | Core |
+| Design patterns (Strategy, Factory, Adapter, Decorator, Facade, Observer, Command, State, Builder, Proxy) | Supporting |
+| Clean Architecture | Supporting |
+| Repositories, domain services, application services | Supporting |
+| Domain events | Supporting |
+| Onion Architecture, ports & adapters | Optional |
 
 Folder: [`02-software-design/`](02-software-design/)
 
@@ -104,19 +104,19 @@ Folder: [`02-software-design/`](02-software-design/)
 
 **Goal:** Learn to make system-level decisions under constraints.
 
-| Topic | Status |
-| ----- | ------ |
-| Architecture characteristics (scalability, availability, reliability, performance) | 🔴 |
-| Security, maintainability, testability, deployability | 🔴 |
-| Observability, resilience, fault tolerance | 🔴 |
-| Architecture styles (monolith, modular monolith, layered, service-based) | 🔴 |
-| Microservices, event-driven, serverless | 🔴 |
-| Coupling, cohesion, component boundaries | 🔴 |
-| Service boundaries, data ownership | 🔴 |
-| Dependency management, granularity | 🔴 |
-| ADRs, architecture principles, constraints | 🔴 |
-| Trade-off analysis, technical debt | 🔴 |
-| Evolutionary architecture, fitness functions | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Architecture characteristics (scalability, availability, reliability, performance) | Core |
+| Security, maintainability, testability, deployability | Core |
+| Observability, resilience, fault tolerance | Core |
+| Architecture styles (monolith, modular monolith, layered, service-based) | Core |
+| Microservices, event-driven, serverless | Core |
+| Coupling, cohesion, component boundaries | Core |
+| Service boundaries, data ownership | Core |
+| ADRs, architecture principles, constraints | Core |
+| Trade-off analysis, technical debt | Core |
+| Dependency management, granularity | Supporting |
+| Evolutionary architecture, fitness functions | Supporting |
 
 Folder: [`03-software-architecture/`](03-software-architecture/)
 
@@ -126,17 +126,17 @@ Folder: [`03-software-architecture/`](03-software-architecture/)
 
 **Goal:** Communicate architecture — not just design it.
 
-| Topic | Status |
-| ----- | ------ |
-| C4 — System Context (C1) | 🔴 |
-| C4 — Containers (C2) | 🔴 |
-| C4 — Components (C3) | 🔴 |
-| C4 — Code (C4) | 🔴 |
-| Deployment diagrams, dynamic diagrams | 🔴 |
-| UML (class, sequence, component, deployment, activity, state) | 🔴 |
-| Architecture documentation | 🔴 |
-| ADRs | 🔴 |
-| Structurizr, PlantUML, Mermaid | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| C4 — System Context (C1) | Core |
+| C4 — Containers (C2) | Core |
+| C4 — Components (C3) | Core |
+| Architecture documentation | Core |
+| ADRs | Core |
+| Deployment diagrams, dynamic diagrams | Supporting |
+| UML (class, sequence, component, deployment, activity, state) | Supporting |
+| Structurizr, PlantUML, Mermaid | Supporting |
+| C4 — Code (C4) | Optional |
 
 **Target:** Given an unfamiliar system, produce Context → Container → Component → Deployment diagrams and explain the architecture to developers and non-developers.
 
@@ -148,20 +148,20 @@ Folder: [`04-modeling/`](04-modeling/)
 
 **Goal:** Learn common solutions to recurring architectural problems.
 
-| Topic | Status |
-| ----- | ------ |
-| Modular monolith | 🔴 |
-| Microservices | 🔴 |
-| API Gateway, BFF | 🔴 |
-| Strangler Fig, anti-corruption layer | 🔴 |
-| Event-driven architecture | 🔴 |
-| CQRS, event sourcing | 🔴 |
-| Saga | 🔴 |
-| Transactional outbox | 🔴 |
-| Retry, circuit breaker, bulkhead | 🔴 |
-| Rate limiting, cache aside | 🔴 |
-| Caching | 🔴 |
-| Resilience patterns | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Modular monolith | Core |
+| Microservices | Core |
+| API Gateway, BFF | Core |
+| Event-driven architecture | Core |
+| Retry, circuit breaker, bulkhead | Core |
+| Rate limiting, cache aside | Core |
+| Caching | Core |
+| Strangler Fig, anti-corruption layer | Supporting |
+| Saga | Supporting |
+| Transactional outbox | Supporting |
+| Resilience patterns | Supporting |
+| CQRS, event sourcing | Optional |
 
 **Key skill:** Problem → Pattern → Advantages → Disadvantages → When to use → When NOT to use
 
@@ -173,18 +173,18 @@ Folder: [`05-architecture-patterns/`](05-architecture-patterns/)
 
 **Goal:** Translate architecture principles into real infrastructure.
 
-| Topic | Status |
-| ----- | ------ |
-| Networking (VPC, subnets, routing, DNS, load balancing) | 🔴 |
-| Compute (EC2, ECS, Lambda) | 🔴 |
-| Storage (S3, EBS) | 🔴 |
-| Databases (RDS, DynamoDB, ElastiCache) | 🔴 |
-| Messaging (SQS, SNS, EventBridge, Kinesis) | 🔴 |
-| Security (IAM, encryption, WAF) | 🔴 |
-| Reliability (multi-AZ, auto-scaling, health checks) | 🔴 |
-| Observability (CloudWatch, X-Ray, logging) | 🔴 |
-| Infrastructure as Code (Terraform, CloudFormation) | 🔴 |
-| AWS Well-Architected Framework | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Networking (VPC, subnets, routing, DNS, load balancing) | Core |
+| Compute (EC2, ECS, Lambda) | Core |
+| Storage (S3, EBS) | Core |
+| Databases (RDS, DynamoDB, ElastiCache) | Core |
+| Messaging (SQS, SNS, EventBridge, Kinesis) | Core |
+| Security (IAM, encryption, WAF) | Core |
+| Reliability (multi-AZ, auto-scaling, health checks) | Core |
+| Observability (CloudWatch, X-Ray, logging) | Core |
+| Infrastructure as Code (Terraform, CloudFormation) | Supporting |
+| AWS Well-Architected Framework | Supporting |
 
 Folder: [`06-cloud/aws/`](06-cloud/aws/)
 
@@ -194,18 +194,18 @@ Folder: [`06-cloud/aws/`](06-cloud/aws/)
 
 **Goal:** Understand what happens when components interact over a network.
 
-| Topic | Status |
-| ----- | ------ |
-| Scalability (vertical vs horizontal) | 🔴 |
-| Replication (leader-follower, multi-leader, leaderless) | 🔴 |
-| Partitioning / sharding | 🔴 |
-| Consistency models | 🔴 |
-| CAP theorem, PACELC | 🔴 |
-| Consensus (Raft) | 🔴 |
-| Distributed transactions | 🔴 |
-| Idempotency, exactly-once semantics | 🔴 |
-| Eventual consistency | 🔴 |
-| Message queues vs event streams | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Scalability (vertical vs horizontal) | Core |
+| Replication (leader-follower, multi-leader, leaderless) | Core |
+| Partitioning / sharding | Core |
+| Consistency models | Core |
+| CAP theorem, PACELC | Core |
+| Distributed transactions | Core |
+| Idempotency, exactly-once semantics | Core |
+| Eventual consistency | Core |
+| Message queues vs event streams | Core |
+| Consensus (Raft) | Supporting |
 
 Folder: [`07-distributed-systems/`](07-distributed-systems/)
 
@@ -215,18 +215,18 @@ Folder: [`07-distributed-systems/`](07-distributed-systems/)
 
 **Goal:** Design complete systems from requirements to deployment.
 
-| Topic | Status |
-| ----- | ------ |
-| Requirements gathering | 🔴 |
-| Capacity estimation | 🔴 |
-| API design | 🔴 |
-| Database design | 🔴 |
-| Caching strategy | 🔴 |
-| Messaging and async processing | 🔴 |
-| Scalability patterns | 🔴 |
-| Reliability and failure handling | 🔴 |
-| Security | 🔴 |
-| Cost optimization | 🔴 |
+| Topic | Priority |
+| ----- | -------- |
+| Requirements gathering | Core |
+| Capacity estimation | Core |
+| API design | Core |
+| Database design | Core |
+| Caching strategy | Core |
+| Messaging and async processing | Core |
+| Scalability patterns | Core |
+| Reliability and failure handling | Core |
+| Security | Core |
+| Cost optimization | Supporting |
 
 **Target:** Given a problem like _"Design a platform that sells digital products globally, supports millions of customers, integrates with external providers, and must remain available when providers fail"_ — work through requirements → capacity → domain boundaries → C4 → API → database → caching → messaging → consistency → failure handling → infrastructure → security → observability → cost → ADRs.
 
@@ -236,14 +236,14 @@ Folder: [`08-system-design/`](08-system-design/)
 
 ## 9. Architecture Practice & Case Studies
 
-**Goal:** Apply everything — design complete systems and document your reasoning.
+**Goal:** Apply everything — design complete systems and document your reasoning. Two well-documented case studies beat four shallow ones.
 
-| Case study | Status |
-| ---------- | ------ |
-| E-commerce | 🔴 |
-| Payment system | 🔴 |
-| Notification system | 🔴 |
-| Digital goods platform | 🔴 |
+| Case study | Priority |
+| ---------- | -------- |
+| E-commerce | Core |
+| Payment system | Core |
+| Notification system | Supporting |
+| Digital goods platform | Supporting |
 
 Each case study should cover:
 

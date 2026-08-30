@@ -2,9 +2,9 @@
 
 > Copy this template when creating a new topic file. Delete this instruction block.
 
-## Status
+## Priority
 
-🔴 Not started — _update using the legend in [README.md](README.md)_
+Core | Supporting | Optional — _see the legend in [README.md](README.md)_
 
 ## What problem does it solve?
 
