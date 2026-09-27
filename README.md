@@ -36,7 +36,7 @@ The goal is not to memorize technologies or patterns, but to understand **proble
 | [RESOURCES.md](RESOURCES.md) | Books, courses, and tools |
 | [TEMPLATE.md](TEMPLATE.md) | Standard format for topic files |
 
-Topic content lives in numbered folders (`01-dsa/` through `09-case-studies/`). Create a topic file only when you actually study it — do not pre-fill every topic upfront.
+Topic content lives in numbered folders (`00-programming-foundations/` through `09-case-studies/`). Create a topic file only when you actually study it — do not pre-fill every topic upfront.
 
 ## How to use
 

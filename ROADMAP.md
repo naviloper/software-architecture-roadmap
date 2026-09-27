@@ -45,6 +45,8 @@ You do not need equal depth at every level. For experienced developers, prioriti
 | Generics, exceptions, concurrency basics | Supporting |
 | Git, testing | Supporting |
 
+Folder: [`00-programming-foundations/`](00-programming-foundations/)
+
 ---
 
 ## 1. Data Structures & Algorithms
