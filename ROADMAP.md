@@ -51,29 +51,136 @@ Folder: [`00-programming-foundations/`](00-programming-foundations/)
 
 ## 1. Data Structures & Algorithms
 
-**Goal:** Develop algorithmic thinking and complexity awareness — not competitive-programming mastery.
+**Goal:** Build algorithmic thinking and complexity awareness, then use both to understand how real system components work.
+
+DSA matters less as an isolated subject and more as a tool for architectural intuition. Know the idea of each family below. Skip competitive-programming depth.
+
+### 1. Data structures
 
 | Topic | Priority |
 | ----- | -------- |
-| Hash maps, hash sets | Core |
-| Stacks, queues | Core |
-| Graphs | Core |
-| Big-O, time/space/amortized complexity | Core |
-| B-trees, inverted indexes | Core |
-| Consistent hashing, bloom filters | Core |
-| Arrays, strings | Supporting |
-| Trees, binary search trees | Supporting |
-| Heaps / priority queues | Supporting |
-| Linear search, binary search | Supporting |
-| BFS, DFS | Supporting |
-| Dijkstra, topological sorting | Supporting |
+| Arrays | Supporting |
+| Strings | Supporting |
 | Linked lists | Optional |
-| Sorting | Optional |
-| Recursion, divide & conquer | Optional |
-| Greedy algorithms, dynamic programming | Optional |
-| Two pointers, sliding window | Optional |
+| Stacks | Core |
+| Queues | Core |
+| Hash tables / maps | Core |
+| Sets | Core |
+| Trees | Supporting |
+| Binary search trees | Supporting |
+| Heaps / priority queues | Supporting |
+| Graphs | Core |
+
+### 2. Algorithms
+
+Focus on these families.
+
+#### 2.1 Searching
+
+| Topic | Priority |
+| ----- | -------- |
+| Linear search | Supporting |
+| Binary search | Supporting |
+
+#### 2.2 Sorting
+
+| Topic | Priority |
+| ----- | -------- |
+| Quicksort | Optional |
+| Mergesort | Optional |
+| Heapsort | Optional |
+| Counting sort, bucket sort (conceptually) | Optional |
+
+#### 2.3 Recursion
+
+| Topic | Priority |
+| ----- | -------- |
+| Recursion | Optional |
+| Call stack | Optional |
+| Base cases | Optional |
+| Divide and conquer | Optional |
+
+#### 2.4 Trees
+
+| Topic | Priority |
+| ----- | -------- |
+| Tree traversal | Supporting |
+| BFS | Supporting |
+| DFS | Supporting |
+
+#### 2.5 Graphs
+
+| Topic | Priority |
+| ----- | -------- |
+| BFS | Supporting |
+| DFS | Supporting |
+| Shortest path (concept) | Supporting |
+| Dijkstra | Supporting |
+| Topological sorting | Supporting |
+
+#### 2.6 Algorithmic techniques
+
+| Topic | Priority |
+| ----- | -------- |
+| Two pointers | Optional |
+| Sliding window | Optional |
+| Hashing | Core |
+| Greedy algorithms | Optional |
+| Divide and conquer | Optional |
+| Dynamic programming (conceptually) | Optional |
+
+### 3. Complexity
+
+Big-O is particularly important for an architect. Use it to compare designs.
+
+| Topic | Priority |
+| ----- | -------- |
+| Time complexity | Core |
+| Space complexity | Core |
+| Amortized complexity | Core |
 
 **Target:** Look at an implementation and say: _"This is O(n²); we can probably solve it in O(n log n)."_
+
+### 4. From algorithms to system components
+
+The stronger connection is using these ideas to explain why common components behave the way they do. The topics below are the bridge into later sections. Consensus, replication, and related depth continue in [Distributed Systems](#7-distributed-systems).
+
+#### 4.1 Redis
+
+Hash tables, sorted sets, and lists explain why Redis provides different data structures, and which one fits a given access pattern.
+
+#### 4.2 Databases
+
+B-trees, hash indexes, trees, and sorting explain how database indexes find and order rows.
+
+| Topic | Priority |
+| ----- | -------- |
+| B-trees | Core |
+| Hash indexes | Core |
+
+#### 4.3 Search engines
+
+Inverted indexes, trees, and hashing explain systems such as Elasticsearch and OpenSearch.
+
+| Topic | Priority |
+| ----- | -------- |
+| Inverted indexes | Core |
+
+#### 4.4 Queues
+
+Queues and priority queues explain job queues, task scheduling, and message brokers.
+
+#### 4.5 Distributed systems
+
+| Topic | Priority |
+| ----- | -------- |
+| Consistent hashing | Core |
+| Leader election | Supporting |
+| Consensus | Supporting |
+| Replication | Core |
+| Distributed locks | Supporting |
+
+**Target:** Given a component — a cache, an index, a queue, a search cluster — name the data structure or algorithm inside it and what that choice costs.
 
 Folder: [`01-dsa/`](01-dsa/)
 
